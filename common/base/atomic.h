@@ -4,7 +4,7 @@
 class Atomic
 {
 	public:
-		static void Add(uint32_t* pw)
+		static void add(uint32_t* pw)
 		{
 			__asm__
 			(
@@ -15,7 +15,7 @@ class Atomic
 				"cc"
 			);
 		}
-		static void Sub(uint32_t* pw)
+		static void sub(uint32_t* pw)
 		{
 			__asm__
 			(
